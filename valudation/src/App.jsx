@@ -1,14 +1,20 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
 import "./App.css";
-import Form from "./components/form";
+import Header from "./layout/header";
+import LogInPage from "./pages/login-page";
+import SigInPage from "./pages/sign-in-page";
+import UsersPage from "./pages/users";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <div className="App">
-      <Form />
+      <Header />
+      <Routes>
+        <Route path="/" element={<LogInPage />} />
+        <Route path="/sign-in-page" element={<SigInPage />} />
+        <Route path="/users-page" element={<UsersPage />} />
+      </Routes>
     </div>
   );
 }
