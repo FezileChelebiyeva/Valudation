@@ -1,10 +1,10 @@
 import { useState } from "react";
-import "./App.css";
+import "./App.scss";
 import Header from "./layout/header";
 import LogInPage from "./pages/login-page";
-import SigInPage from "./pages/sign-in-page";
 import UsersPage from "./pages/users";
 import { Route, Routes } from "react-router-dom";
+import SignUpPage from "./pages/sign-up-page";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<LogInPage />} />
-        <Route path="/sign-in-page" element={<SigInPage />} />
+        <Route path="/sign-up-page" element={<SignUpPage />} />
         <Route path="/users-page" element={<UsersPage />} />
       </Routes>
     </div>
