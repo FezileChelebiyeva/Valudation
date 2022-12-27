@@ -3,6 +3,17 @@ import { useFormik } from "formik";
 import { customerValidationSchema } from "./schema";
 import axios from "axios";
 import "./index.scss";
+import {
+  Table,
+  Thead,
+  Tbody,
+  Tfoot,
+  Tr,
+  Th,
+  Td,
+  TableCaption,
+  TableContainer,
+} from '@chakra-ui/react'
 const Form = () => {
   const { handleSubmit, handleChange, values, errors, touched, resetForm } =
     useFormik({

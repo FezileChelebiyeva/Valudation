@@ -13,7 +13,7 @@ const Header = () => {
               <NavLink to={"/"}>Login</NavLink>
             </li>
             <li>
-              <NavLink to={"/sign-up-page"}>Sign In</NavLink>
+              <NavLink to={"/sign-up-page"}>Sign Up</NavLink>
             </li>
             <li>
               {" "}
